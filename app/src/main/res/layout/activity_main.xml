@@ -1,17 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:orientation="vertical" >
 
-    <TextView
-        android:text="Hello World!"
+    <com.example.tao.customimageview.CustomImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:image="@mipmap/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText="hello andorid ! "
+        custom:titleTextcolor="#ff0000"
+        custom:titleTextSize="30sp" />
+
+    <com.example.tao.customimageview.CustomImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:image="@mipmap/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText="helloworldwelcome"
+        custom:titleTextcolor="#00ff00"
+        custom:titleTextSize="20sp" />
+
+    <com.example.tao.customimageview.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:image="@mipmap/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText="妹子~"
+        custom:titleTextcolor="#ff0000"
+        custom:titleTextSize="12sp" />
+
+</LinearLayout>
