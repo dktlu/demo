@@ -6,10 +6,11 @@
     android:layout_height="match_parent">
 
     <com.example.tao.customview_1.CustomView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
         custom:titleText="3712"
-        custom:titleTextcolor="#ff0000"
-        custom:titleTextSize="40sp"/>
+        custom:titleTextSize="40sp"
+        custom:titleTextcolor="#ff0000"/>
 
 </RelativeLayout>
